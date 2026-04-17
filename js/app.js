@@ -20,8 +20,12 @@
         const d = el.getAttribute('data-d');
         if (u && d) {
           const email = u + '@' + d;
-          el.href = 'mailto:' + email;
-          el.textContent = email;
+          el.textContent = email; // Replace text with real email
+          el.removeAttribute('href'); // Remove link behavior completely
+          el.removeEventListener('click', null); // Prevent any clicks if it was a button
+          el.style.textDecoration = 'none';
+          el.style.color = 'inherit';
+          el.style.cursor = 'text'; // Make it look and act like normal text
           el.removeAttribute('data-u');
           el.removeAttribute('data-d');
         }
