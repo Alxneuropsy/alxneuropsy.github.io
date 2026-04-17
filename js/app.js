@@ -14,29 +14,17 @@
       // Add loaded class for initial animations
       document.body.classList.add('loaded');
 
-      // Email Obfuscation Decoder (Anti-Spam)
-      const emailLinks = document.querySelectorAll('.obfuscated-email');
-      emailLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-          // If already decoded, do nothing to allow standard mailto behavior
-          if (!this.hasAttribute('data-user')) return;
-          
-          e.preventDefault();
-          const user = this.getAttribute('data-user');
-          const domain = this.getAttribute('data-domain');
-          
-          if (user && domain) {
-            const email = user + '@' + domain;
-            this.textContent = email; // Show email
-            this.href = 'mailto:' + email; // Make it a mailto link
-            this.removeAttribute('data-user');
-            this.removeAttribute('data-domain');
-            this.classList.remove('obfuscated-email');
-            
-            // Open mail client immediately
-            window.location.href = this.href;
-          }
-        });
+      // Email Obfuscation Decoder (Auto-resolve on load safely)
+      document.querySelectorAll('.safe-mail').forEach(el => {
+        const u = el.getAttribute('data-u');
+        const d = el.getAttribute('data-d');
+        if (u && d) {
+          const email = u + '@' + d;
+          el.href = 'mailto:' + email;
+          el.textContent = email;
+          el.removeAttribute('data-u');
+          el.removeAttribute('data-d');
+        }
       });
     }
   };
