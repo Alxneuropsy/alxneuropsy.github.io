@@ -18,15 +18,6 @@
     },
 
     /**
-     * Sanitize input to prevent XSS
-     */
-    sanitize(str) {
-      const div = document.createElement('div');
-      div.textContent = str;
-      return div.innerHTML;
-    },
-
-    /**
      * Validate email format
      */
     isValidEmail(email) {
@@ -64,12 +55,12 @@
     handleSubmit(e) {
       e.preventDefault();
 
-      // Gather form data
-      const name = this.sanitize(this.form.querySelector('#contact-name').value.trim());
-      const email = this.sanitize(this.form.querySelector('#contact-email').value.trim());
-      const phone = this.sanitize(this.form.querySelector('#contact-phone').value.trim());
-      const subject = this.sanitize(this.form.querySelector('#contact-subject').value.trim());
-      const message = this.sanitize(this.form.querySelector('#contact-message').value.trim());
+      // Gather form data directly (sanitization happens natively via encodeURIComponent during URI building)
+      const name = this.form.querySelector('#contact-name').value.trim();
+      const email = this.form.querySelector('#contact-email').value.trim();
+      const phone = this.form.querySelector('#contact-phone').value.trim();
+      const subject = this.form.querySelector('#contact-subject').value.trim();
+      const message = this.form.querySelector('#contact-message').value.trim();
       const rgpd = this.form.querySelector('#contact-rgpd').checked;
 
       // Validate
