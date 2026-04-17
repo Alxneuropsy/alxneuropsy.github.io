@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Alexia Pacas — Neuropsychologue à Bondoufle (91) et Torcy (77). Bilans neuropsychologiques, évaluation TDAH, TSA, troubles cognitifs. Enfants, adolescents, adultes et seniors.">
+  <meta name="author" content="Alexia Pacas">
+  <meta name="robots" content="index, follow">
+
+  <!-- Security Headers -->
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cal.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; frame-src https://cal.com; img-src 'self' data:;">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alexia Pacas — Neuropsychologue à Bondoufle et Torcy">
+  <meta property="og:description" content="Bilans neuropsychologiques, évaluation TDAH et TSA. Cabinets à Bondoufle (91) et Torcy (77).">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+
+  <title>Alexia Pacas — Neuropsychologue | Bondoufle (91) & Torcy (77)</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+</head>
+<body>
+  <!-- ======== PARTICLES BACKGROUND ======== -->
+  <canvas class="particles-canvas" id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ======== NAVIGATION ======== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="navbar__inner">
+      <a href="#accueil" class="navbar__logo" id="navbar-logo">
+        <svg class="navbar__logo-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M20 8c-4 0-8 3-8 8 0 3 1.5 5 3 6.5s3 3.5 3 6.5h4c0-3 1.5-5 3-6.5s3-3.5 3-6.5c0-5-4-8-8-8z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M15 29h10M16 32h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="20" cy="16" r="2" fill="currentColor" opacity="0.5"/>
+          <path d="M14 16c2-2 4-2 6 0s4 2 6 0" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+        </svg>
+        <span>Alexia Pacas</span>
+      </a>
+
+      <ul class="navbar__menu" id="navbar-menu">
+        <li><a href="#accueil" class="navbar__link active" data-section="accueil">Accueil</a></li>
+        <li><a href="#presentation" class="navbar__link" data-section="presentation">Présentation</a></li>
+        <li><a href="#services" class="navbar__link" data-section="services">Services</a></li>
+        <li><a href="#tarifs" class="navbar__link" data-section="tarifs">Tarifs</a></li>
+        <li><a href="#rendez-vous" class="navbar__link" data-section="rendez-vous">Rendez-vous</a></li>
+        <li><a href="#contact" class="navbar__link" data-section="contact">Contact</a></li>
+        <li class="navbar__cta">
+          <a href="#rendez-vous" class="btn btn--gold btn--sm" id="nav-cta-btn">Prendre RDV</a>
+        </li>
+      </ul>
+
+      <button class="navbar__toggle" id="navbar-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+        <span class="navbar__toggle-bar"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== HERO SECTION ======== -->
+  <section class="hero section" id="accueil" aria-label="Accueil">
+    <div class="hero__bg-pattern" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__text">
+          <span class="hero__label reveal">Neuropsychologue — Bondoufle (91) & Torcy (77)</span>
+          <h1 class="hero__title reveal reveal-delay-1">
+            Alexia Pacas,<br>
+            <em>Neuropsychologue</em>
+          </h1>
+          <p class="hero__subtitle reveal reveal-delay-2">
+            Évaluation, diagnostic et accompagnement personnalisé des troubles cognitifs et du neurodéveloppement. Enfants, adolescents, adultes et seniors.
+          </p>
+          <div class="hero__actions reveal reveal-delay-3">
+            <a href="#rendez-vous" class="btn btn--gold btn--lg" id="hero-cta-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Prendre rendez-vous
+            </a>
+            <a href="#presentation" class="btn btn--outline btn--lg" id="hero-discover-btn">
+              Découvrir
+            </a>
+          </div>
+        </div>
+        <div class="hero__visual reveal-right">
+          <div class="hero__photo-frame">
+            <img src="assets/images/photo-profil.jpg" alt="Alexia Pacas, Neuropsychologue" id="hero-photo" onerror="this.style.display='none'">
+          </div>
+          <div class="hero__decoration hero__decoration--top-right" aria-hidden="true"></div>
+          <div class="hero__decoration hero__decoration--bottom-left" aria-hidden="true"></div>
+          <div class="hero__brain-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C9.5 2 7.5 3.5 7 5.5C5.5 5.8 4.2 6.8 3.5 8.2C2.5 10 2.8 12.2 4 13.8C3.4 15.2 3.5 16.8 4.5 18C5.5 19.3 7 20 8.5 20H9v-1.5c-1.5 0-3-.8-3.7-2-.7-1.2-.5-2.7.3-3.7l.3-.4-.3-.4C4.8 11 4.5 9.5 5.3 8.3c.6-1 1.5-1.6 2.5-1.8l.5-.1.1-.5c.3-1.5 1.7-2.7 3.3-2.9h.6c1.6.2 3 1.4 3.3 2.9l.1.5.5.1c1 .2 1.9.8 2.5 1.8.8 1.2.5 2.7-.3 3.7l-.3.4.3.4c.8 1 1 2.5.3 3.7-.7 1.2-2.2 2-3.7 2V20h.5c1.5 0 3-.7 4-2 1-1.2 1.1-2.8.5-4 1.2-1.6 1.5-3.8.5-5.6-.7-1.4-2-2.4-3.5-2.7C16.5 3.5 14.5 2 12 2z"/>
+              <path d="M12 8v8M9 12h6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== PRÉSENTATION SECTION ======== -->
+  <section class="section section--alt" id="presentation" aria-label="Présentation">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">À propos</span>
+        <h2 class="section-header__title">Présentation</h2>
+        <p class="section-header__subtitle">Neuropsychologue clinicienne spécialisée dans l'évaluation des fonctions cognitives</p>
+        <hr class="divider">
+      </div>
+
+      <div class="presentation__content">
+        <div class="presentation__sidebar reveal-left">
+          <div class="presentation__photo">
+            <img src="assets/images/photo-profil.jpg" alt="Alexia Pacas — Portrait professionnel" onerror="this.parentElement.style.background='var(--color-bg-tertiary)'">
+          </div>
+          <div class="presentation__info-card">
+            <div class="presentation__info-item">
+              <svg class="presentation__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg>
+              <div>
+                <div class="presentation__info-label">Formation</div>
+                <div class="presentation__info-value">
+                  <strong>ONCOGITE</strong><br>
+                  Troubles cognitifs post-cancer, Remédiation cognitive adulte<br><br>
+                  <strong>Formation - TSA Adultes</strong><br>
+                  Octopus<br><br>
+                  <strong>Master - Neuropsychologie clinique et cognitive à tous les âges de la vie, Neurosciences</strong><br>
+                  Paris 10 - Nanterre<br><br>
+                  <strong>Bâtiment Neurologie - Neurologie mémoire et langage</strong><br>
+                  Hôpital Sainte Anne (Paris 14)<br><br>
+                  <strong>Licence en Psychologie</strong><br>
+                  Paris 10 - Nanterre (92) - option trouble des apprentissages<br><br>
+                  <strong>Diplôme d'Etat infirmier</strong><br>
+                  Spécialisée en psychiatrie et soins d'urgence - IFSI Perray-Vaucluse (91)
+                </div>
+              </div>
+            </div>
+            <div class="presentation__info-item">
+              <svg class="presentation__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <div class="presentation__info-label">Cabinets</div>
+                <div class="presentation__info-value">
+                  <strong>Bondoufle :</strong> 2 Square de la Butte aux Lièvres, 91070<br>
+                  <strong>Torcy :</strong> 68 bis Rue de Paris, 77200 <span class="text-muted" style="font-size:0.85rem;">(Cabinet de Camille Barbe)</span>
+                </div>
+              </div>
+            </div>
+            <div class="presentation__info-item">
+              <svg class="presentation__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              <div>
+                <div class="presentation__info-label">Public</div>
+                <div class="presentation__info-value">Enfants, Adolescents, Adultes, Seniors</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="presentation__main">
+          <h3 class="reveal">Qu'est-ce qu'un neuropsychologue ?</h3>
+          <p class="reveal">
+            Vous pouvez consulter un neuropsychologue avec ou sans prescription médicale.<br>
+            Le neuropsychologue évalue et prend en charge les troubles cognitifs, émotionnels et comportementaux liés à des dysfonctionnements du cerveau. Son rôle est d’analyser les difficultés rencontrées par les patients afin de mieux comprendre leur impact sur le quotidien et d’apporter des solutions adaptées.
+          </p>
+
+          <h3 class="reveal" style="margin-top: var(--space-xl);">Qui peut consulter un neuropsychologue ?</h3>
+          <p class="reveal">
+            Toute personne s’interrogeant sur ses capacités cognitives, en demande de suivi psychologique et/ou de remédiation cognitive, d'aide et de conseils (enfants, adolescents, adultes et seniors). Si le consultant présente des troubles cognitifs d’origine neurodéveloppementale, neurologique ou psychiatrique.
+          </p>
+
+          <h3 class="reveal">Mon approche</h3>
+          <p class="reveal">
+            Je réalise des <strong>bilans neuropsychologiques</strong> pour évaluer le fonctionnement intellectuel, les fonctions cognitives (mémoire, attention, langage, etc.), ainsi que dans le cadre du diagnostic du <strong>TDAH</strong> (trouble déficit de l'attention avec ou sans hyperactivité) et du <strong>TSA</strong> (trouble du spectre de l'autisme).
+          </p>
+
+          <div class="presentation__highlight reveal">
+            <p>
+              <strong>✦ Une approche collaborative unique</strong><br>
+              Une particularité de ma pratique est la réalisation des bilans cognitifs, TDAH et TSA en collaboration avec ma collègue, <strong>Mme Camille Barbe</strong>, au sein de son cabinet à <strong>Torcy (77)</strong>. Cette démarche à deux neuropsychologues, encore peu courante, permet de croiser nos regards pour offrir une évaluation plus fiable, plus complète et plus objective.
+            </p>
+          </div>
+
+          <p class="reveal">
+            Cette collaboration favorise également une meilleure rapidité dans l'analyse et la rédaction des comptes rendus, ce qui permet aux familles et aux patients de disposer plus vite des résultats.
+          </p>
+          <p class="reveal">
+            Nous mettons un point d'honneur à respecter les recommandations actuelles, notamment dans le cadre du diagnostic de l'autisme, où la complémentarité de deux professionnels garantit une <strong>évaluation de qualité</strong> et une interprétation plus neutre des tests.
+          </p>
+
+          <div class="services__note reveal" style="margin-top: var(--space-2xl); text-align: left;">
+            <p>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <strong>À noter :</strong> Je ne propose pas de suivi psychologique. Mon activité est exclusivement centrée sur l'évaluation et l'analyse des fonctions cognitives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== SERVICES SECTION ======== -->
+  <section class="section" id="services" aria-label="Services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">Expertises</span>
+        <h2 class="section-header__title">Mes Services</h2>
+        <p class="section-header__subtitle">Des évaluations rigoureuses pour comprendre et accompagner vos difficultés cognitives</p>
+        <hr class="divider">
+      </div>
+
+      <div class="services__grid">
+        <!-- Service 1 -->
+        <div class="card reveal reveal-delay-1">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 20h16M16 28h10"/>
+            <rect x="6" y="6" width="36" height="36" rx="4"/>
+          </svg>
+          <h3 class="card__title">Entretien clinique approfondi <span style="font-size:0.9rem; font-weight:normal; display:block; margin-top:4px;">(1h30)</span></h3>
+          <p class="card__text">
+            Première rencontre d'échanges permettant de définir vos besoins, retracer votre parcours et orienter la prise en charge ou l'évaluation.
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="card reveal reveal-delay-2">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20"/>
+            <path d="M24 4c5 5 8 12 8 20"/>
+            <path d="M24 4c-5 5-8 12-8 20"/>
+            <path d="M6 20h36"/>
+          </svg>
+          <h3 class="card__title">Remédiation cognitive adulte <span style="font-size:0.9rem; font-weight:normal; display:block; margin-top:4px;">(0h45)</span></h3>
+          <p class="card__text">
+            Séances de prise en charge et d’entraînement spécifiques visant à renforcer, stimuler ou compenser les fonctions cognitives affaiblies.
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="card reveal reveal-delay-3">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="24" cy="14" r="8"/>
+            <path d="M8 42c0-8 7-14 16-14s16 6 16 14"/>
+          </svg>
+          <h3 class="card__title">1ère consultation bilan neuropsychologique <br><span style="font-size:0.9rem; font-weight:normal; display:block; margin-top:4px;">(enfant + 6 ans) (0h50)</span></h3>
+          <p class="card__text">
+            Phase initiale ciblée pour l'enfant afin de cerner le contexte d'apprentissage et de développement avant un éventuel bilan complet.
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="card reveal reveal-delay-1">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="24" cy="14" r="8"/>
+            <path d="M8 42c0-8 7-14 16-14s16 6 16 14"/>
+          </svg>
+          <h3 class="card__title">1ère consultation bilan neuropsychologique <br><span style="font-size:0.9rem; font-weight:normal; display:block; margin-top:4px;">(adulte) (1h00)</span></h3>
+          <p class="card__text">
+            Entretien préalable indispensable à l'adulte pour comprendre les plaintes cognitives du quotidien et fixer les objectifs de l'évaluation.
+          </p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="card reveal reveal-delay-2">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M24 6C14 6 6 14 6 24s8 18 18 18 18-8 18-18"/>
+            <path d="M24 6c4 4 6 10 6 18"/>
+            <path d="M24 6c-4 4-6 10-6 18"/>
+            <path d="M8 18h32M8 30h32"/>
+          </svg>
+          <h3 class="card__title">Avis diagnostic du TSA <br><span style="font-size:0.9rem; font-weight:normal; display:block; margin-top:4px;">(à partir de 5 ans) (2h00)</span></h3>
+          <p class="card__text">
+            Observation approfondie des particularités neurodéveloppementales avec l'utilisation d'outils cliniques standardisés et rigoureux.
+          </p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="card reveal reveal-delay-3">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="24,4 29,18 44,18 32,27 36,42 24,33 12,42 16,27 4,18 19,18"/>
+          </svg>
+          <h3 class="card__title">Bilan psychométrique QI <br><span style="font-size:0.9rem; font-weight:normal; display:block; margin-top:4px;">(WISC-V, WAIS-IV) (1h30)</span></h3>
+          <p class="card__text">
+            Passation des échelles de Wechsler pour quantifier et cartographier le fonctionnement intellectuel (QI) et le profil cognitif.
+          </p>
+        </div>
+
+        <!-- Service 7 -->
+        <div class="card reveal reveal-delay-1">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="16" cy="14" r="6"/>
+            <circle cx="32" cy="14" r="6"/>
+            <path d="M6 42c0-6 5-10 12-10h12c7 0 12 4 12 10"/>
+          </svg>
+          <h3 class="card__title">Avis diagnostic TSA + QI <span style="font-size:0.9rem; font-weight:normal; display:block; margin-top:4px;">(2 neuropsys, autre cabinet) (3h00)</span></h3>
+          <p class="card__text">
+            Évaluation la plus exhaustive et fiable, croisant les regards de deux neuropsychologues pour un diagnostic clinique complet.
+          </p>
+        </div>
+
+        <!-- Service 8 -->
+        <div class="card reveal reveal-delay-2">
+          <svg class="card__icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="24" cy="24" r="18"/>
+            <path d="M24 14v10l6 6"/>
+          </svg>
+          <h3 class="card__title">Avis diagnostic TDA/H <br><span style="font-size:0.9rem; font-weight:normal; display:block; margin-top:4px;">(à partir de 6 ans) (2h00)</span></h3>
+          <p class="card__text">
+            Investigation précise des processus attentionnels et de l'hyperactivité pour repérer et comprendre le fonctionnement du trouble.
+          </p>
+        </div>
+      </div>
+
+      <div class="services__note reveal" style="margin-top: var(--space-3xl);">
+        <p>
+          <strong>✦ Évaluation en binôme :</strong> Les bilans TDAH et TSA peuvent être réalisés en collaboration avec Mme Camille Barbe, neuropsychologue, au cabinet de Torcy (77), pour garantir une évaluation plus fiable et objective.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== TARIFS SECTION ======== -->
+  <section class="section section--alt" id="tarifs" aria-label="Tarifs">
+    <div class="container">
+      <div class="services__tarifs reveal">
+        <div class="section-header">
+          <h2 class="section-header__title">Tarifs</h2>
+          <hr class="divider">
+        </div>
+        
+        <ul class="tarifs__list" style="list-style: none; padding: 0; max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+          <li style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201, 168, 76, 0.2);">
+            <span>Entretien clinique approfondi (1h30)</span>
+            <strong style="color: var(--color-gold); font-size: 1.1rem; white-space: nowrap;">85,00 €</strong>
+          </li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201, 168, 76, 0.2);">
+            <span>Remédiation cognitive adulte (0h45)</span>
+            <strong style="color: var(--color-gold); font-size: 1.1rem; white-space: nowrap;">70,00 €</strong>
+          </li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201, 168, 76, 0.2);">
+            <span>1ère consultation pour un bilan neuropsychologique (enfant + 6 ans) (0h50)</span>
+            <strong style="color: var(--color-gold); font-size: 1.1rem; white-space: nowrap;">60,00 €</strong>
+          </li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201, 168, 76, 0.2);">
+            <span>1ère consultation pour un bilan neuropsychologique (adulte) (1h00)</span>
+            <strong style="color: var(--color-gold); font-size: 1.1rem; white-space: nowrap;">70,00 €</strong>
+          </li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201, 168, 76, 0.2);">
+            <span>Avis diagnostic du TSA (à partir de 5 ans) (2h00)</span>
+            <strong style="color: var(--color-gold); font-size: 1.1rem; white-space: nowrap;">600,00 €</strong>
+          </li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201, 168, 76, 0.2);">
+            <span>Bilan psychométrique - QI (WISC-V, WAIS-IV) (1h30)</span>
+            <strong style="color: var(--color-gold); font-size: 1.1rem; white-space: nowrap;">340,00 €</strong>
+          </li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201, 168, 76, 0.2);">
+            <span style="padding-right: 1rem;">Avis diagnostic TSA + Bilan intellectuel (par 2 neuropsychologues sur un autre cabinet) (3h00)</span>
+            <strong style="color: var(--color-gold); font-size: 1.1rem; white-space: nowrap;">810,00 €</strong>
+          </li>
+          <li style="display: flex; justify-content: space-between; align-items: center; padding-bottom: 0.5rem; border-bottom: 1px solid rgba(201, 168, 76, 0.2);">
+            <span>Avis diagnostic TDA/H (à partir de 6 ans) (2h00)</span>
+            <strong style="color: var(--color-gold); font-size: 1.1rem; white-space: nowrap;">450,00 €</strong>
+          </li>
+        </ul>
+        <p class="text-muted" style="font-size: 0.85rem; text-align: center; max-width: 800px; margin: 1.5rem auto 0 auto; line-height: 1.6;">
+          Ces honoraires vous sont communiqués à titre indicatif par le soignant. Ils peuvent varier selon le type de soins finalement réalisés en cabinet, le nombre de consultations et les actes additionnels nécessaires. En cas de dépassement des tarifs, le soignant doit en avertir préalablement le patient.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== RENDEZ-VOUS SECTION ======== -->
+  <section class="section section--alt" id="rendez-vous" aria-label="Prendre rendez-vous">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">Planifier</span>
+        <h2 class="section-header__title">Prendre Rendez-vous</h2>
+        <p class="section-header__subtitle">Réservez votre créneau en ligne en quelques clics</p>
+        <hr class="divider">
+      </div>
+
+      <div class="appointment__content">
+        <div class="appointment__info reveal-left">
+          <p>
+            Pour prendre rendez-vous, choisissez la plateforme qui vous convient ci-dessous. Vous serez redirigé(e) vers le site de réservation correspondant.
+          </p>
+
+          <h3 style="margin-top: var(--space-2xl); margin-bottom: var(--space-lg);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Cabinet de Bondoufle (91)
+          </h3>
+          <p class="text-muted" style="font-size: 0.95rem; margin-bottom: var(--space-lg);">
+            2 Square de la Butte aux Lièvres, 91070 Bondoufle
+          </p>
+          <a href="https://docorga.com/praticien/67b707537dc90659930e5496" target="_blank" rel="noopener noreferrer" class="btn btn--gold" id="rdv-docorga-btn" style="width: 100%; margin-bottom: var(--space-lg);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Prendre RDV sur Docorga
+          </a>
+
+          <hr class="divider divider--left" style="margin: var(--space-2xl) 0;">
+
+          <h3 style="margin-bottom: var(--space-lg);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 8px;"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Cabinet de Torcy (77)
+          </h3>
+          <p class="text-muted" style="font-size: 0.95rem;">
+            68 bis Rue de Paris, 77200 Torcy
+          </p>
+          <p class="text-muted" style="font-size: 0.85rem; margin-bottom: var(--space-lg);">
+            <em>Cabinet de Camille Barbe — Bilans en binôme</em>
+          </p>
+          <a href="https://www.doctolib.fr/psychologue/torcy/camille-barbe-torcy" target="_blank" rel="noopener noreferrer" class="btn btn--gold" id="rdv-doctolib-btn" style="width: 100%; margin-bottom: var(--space-lg);">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Prendre RDV sur Doctolib
+          </a>
+
+          <div class="services__note" style="text-align: left; margin-top: var(--space-xl);">
+            <p>
+              <strong>💡 Premier rendez-vous :</strong> Pensez à apporter les documents médicaux et scolaires pertinents (ordonnance, bulletins scolaires, comptes rendus antérieurs).
+            </p>
+          </div>
+        </div>
+
+        <div class="appointment__widget reveal-right" id="appointment-widget">
+          <div class="appointment__widget-placeholder" id="cal-placeholder" style="text-align: center;">
+            <!-- Cadenas icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="opacity: 0.5;">
+              <rect x="3" y="11" width="18" height="11" rx="2"/>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              <circle cx="12" cy="16" r="1" fill="currentColor"/>
+            </svg>
+            <p style="margin-top: var(--space-lg);"><strong style="color: var(--color-gold);">Réservation en ligne directe</strong></p>
+            <p class="text-muted" style="font-size: 0.95rem;">
+              Bientôt disponible
+            </p>
+            <div class="badge" style="margin-top: var(--space-md);">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Prochainement
+            </div>
+            <p class="text-muted" style="font-size: 0.85rem; margin-top: var(--space-xl); line-height: 1.7;">
+              Un système de réservation intégré directement sur ce site sera bientôt mis en place.<br>
+              En attendant, utilisez les boutons ci-contre pour réserver via Docorga ou Doctolib.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== CONTACT SECTION ======== -->
+  <section class="section" id="contact" aria-label="Contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-header__label">Contact</span>
+        <h2 class="section-header__title">Me Contacter</h2>
+        <p class="section-header__subtitle">N'hésitez pas à me joindre pour toute question ou demande d'information</p>
+        <hr class="divider">
+      </div>
+
+      <div class="contact__content">
+        <div class="reveal-left">
+          <h3>Informations pratiques</h3>
+          <p>Je vous accueille dans mes cabinets situés à Bondoufle (91) et à Torcy (77).</p>
+
+          <ul class="contact__info-list">
+            <li class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact__info-label">Cabinet Bondoufle</div>
+                <div class="contact__info-value">2 Square de la Butte aux Lièvres<br>91070 Bondoufle</div>
+              </div>
+            </li>
+            <li class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <div class="contact__info-label">Cabinet Torcy <span class="text-muted" style="font-size:0.75rem; text-transform:none;">(Cabinet de Camille Barbe)</span></div>
+                <div class="contact__info-value">68 bis Rue de Paris<br>77200 Torcy</div>
+              </div>
+            </li>
+            <li class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <div class="contact__info-label">Email</div>
+                <div class="contact__info-value">
+                  <a href="mailto:pacas.neuropsy@gmail.com" id="email-link">pacas.neuropsy@gmail.com</a>
+                </div>
+              </div>
+            </li>
+            <li class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <div class="contact__info-label">Téléphone</div>
+                <div class="contact__info-value">
+                  <a href="tel:+33699256344" id="phone-link">06 99 25 63 44</a>
+                </div>
+              </div>
+            </li>
+            <li class="contact__info-item">
+              <div class="contact__info-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <div>
+                <div class="contact__info-label">Disponibilité</div>
+                <div class="contact__info-value">Mardi au cabinet de Bondoufle<br>Mercredi et jeudi au cabinet de Torcy</div>
+              </div>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="contact__form-card reveal-right">
+          <h3 class="contact__form-title">Envoyer un message</h3>
+          <form id="contact-form" novalidate>
+            <div class="contact__form-row">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Nom complet *</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Votre nom" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email *</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="votre@email.fr" required autocomplete="email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-phone" class="form-label">Téléphone</label>
+              <input type="tel" id="contact-phone" name="phone" class="form-input" placeholder="06 XX XX XX XX" autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Objet *</label>
+              <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Motif de votre message" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message *</label>
+              <textarea id="contact-message" name="message" class="form-textarea" placeholder="Décrivez votre demande..." required></textarea>
+            </div>
+            <div class="form-group" style="display: flex; align-items: flex-start; gap: var(--space-sm);">
+              <input type="checkbox" id="contact-rgpd" name="rgpd" required style="margin-top: 4px; accent-color: var(--color-gold);">
+              <label for="contact-rgpd" style="font-size: 0.85rem; color: var(--color-text-muted); cursor: pointer;">
+                J'accepte que mes données soient traitées conformément à la <a href="politique-confidentialite.html">politique de confidentialité</a>. *
+              </label>
+            </div>
+            <button type="submit" class="btn btn--gold btn--lg" id="contact-submit-btn" style="width: 100%;">
+              Envoyer le message
+            </button>
+            <div id="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" id="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">Alexia Pacas — Neuropsychologue</div>
+          <p class="footer__desc">
+            Cabinets de neuropsychologie à Bondoufle (91) et Torcy (77). Évaluation des fonctions cognitives, diagnostic TDAH et TSA. Enfants, adolescents, adultes et seniors.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer__title">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#rendez-vous">Rendez-vous</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Services</h4>
+          <ul class="footer__links">
+            <li><a href="#service-bilan">Bilan neuropsychologique</a></li>
+            <li><a href="#service-tdah">Évaluation TDAH</a></li>
+            <li><a href="#service-tsa">Évaluation TSA</a></li>
+            <li><a href="#service-hpi">Haut Potentiel (HPI)</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">Informations légales</h4>
+          <ul class="footer__links">
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+            <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+            <li><a href="cgu.html">CGU</a></li>
+            <li>
+              <button class="footer__cookie-link" id="cookie-settings-btn" type="button">
+                Gérer les cookies
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Alexia Pacas — Tous droits réservés</p>
+        <p class="footer__copy">Site conforme au RGPD</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======== COOKIE BANNER ======== -->
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Gestion des cookies" aria-describedby="cookie-banner-text">
+    <div class="cookie-banner__inner">
+      <p class="cookie-banner__text" id="cookie-banner-text">
+        🍪 Ce site utilise des cookies pour améliorer votre expérience. Les cookies essentiels sont nécessaires au fonctionnement du site. Vous pouvez accepter ou refuser les cookies non essentiels.
+        <a href="politique-confidentialite.html">En savoir plus</a>
+      </p>
+      <div class="cookie-banner__actions">
+        <button class="btn btn--gold btn--sm" id="cookie-accept-btn" type="button">Accepter</button>
+        <button class="btn btn--outline btn--sm" id="cookie-refuse-btn" type="button">Refuser</button>
+        <button class="btn btn--outline btn--sm" id="cookie-customize-btn" type="button">Personnaliser</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== COOKIE SETTINGS MODAL ======== -->
+  <div class="cookie-modal" id="cookie-modal" role="dialog" aria-label="Paramètres des cookies" aria-modal="true">
+    <div class="cookie-modal__overlay" id="cookie-modal-overlay"></div>
+    <div class="cookie-modal__content">
+      <button class="cookie-modal__close" id="cookie-modal-close" aria-label="Fermer">&times;</button>
+      <h3 class="cookie-modal__title">Paramètres des cookies</h3>
+      <p class="text-muted" style="font-size: 0.9rem; margin-bottom: var(--space-lg);">
+        Gérez vos préférences de cookies. Les cookies essentiels ne peuvent pas être désactivés car ils sont nécessaires au fonctionnement du site.
+      </p>
+
+      <div class="cookie-category">
+        <div class="cookie-category__header">
+          <span class="cookie-category__name">Cookies essentiels</span>
+          <label class="toggle">
+            <input type="checkbox" checked disabled>
+            <span class="toggle__slider"></span>
+          </label>
+        </div>
+        <p class="cookie-category__desc">Nécessaires au fonctionnement du site (préférences cookies, navigation). Toujours actifs.</p>
+      </div>
+
+      <div class="cookie-category">
+        <div class="cookie-category__header">
+          <span class="cookie-category__name">Cookies analytiques</span>
+          <label class="toggle">
+            <input type="checkbox" id="cookie-analytics">
+            <span class="toggle__slider"></span>
+          </label>
+        </div>
+        <p class="cookie-category__desc">Nous aident à comprendre comment les visiteurs interagissent avec le site (pages visitées, durée).</p>
+      </div>
+
+      <div class="cookie-category">
+        <div class="cookie-category__header">
+          <span class="cookie-category__name">Cookies tiers</span>
+          <label class="toggle">
+            <input type="checkbox" id="cookie-third-party">
+            <span class="toggle__slider"></span>
+          </label>
+        </div>
+        <p class="cookie-category__desc">Utilisés par les services externes intégrés au site (Cal.com pour les rendez-vous).</p>
+      </div>
+
+      <div style="display: flex; gap: var(--space-md); margin-top: var(--space-xl);">
+        <button class="btn btn--gold btn--sm" id="cookie-save-btn" type="button" style="flex: 1;">Enregistrer mes choix</button>
+        <button class="btn btn--outline btn--sm" id="cookie-accept-all-btn" type="button" style="flex: 1;">Tout accepter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== BACK TO TOP ======== -->
+  <button class="back-to-top" id="back-to-top" aria-label="Retour en haut de page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <!-- ======== SCRIPTS ======== -->
+  <script src="js/cookies.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
