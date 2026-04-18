@@ -564,6 +564,11 @@
         <div class="contact__form-card reveal-right">
           <h3 class="contact__form-title">Envoyer un message</h3>
           <form id="contact-form" novalidate>
+            <!-- Honeypot anti-spam (invisible pour les humains, piège pour les robots) -->
+            <div style="position: absolute; left: -9999px; opacity: 0; height: 0; width: 0; overflow: hidden;" aria-hidden="true">
+              <label for="contact-website">Ne pas remplir ce champ</label>
+              <input type="text" id="contact-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
             <div class="contact__form-row">
               <div class="form-group">
                 <label for="contact-name" class="form-label">Nom complet *</label>
@@ -707,7 +712,7 @@
             <span class="toggle__slider"></span>
           </label>
         </div>
-        <p class="cookie-category__desc">Utilisés par les services externes intégrés au site (Cal.com pour les rendez-vous).</p>
+        <p class="cookie-category__desc">Utilisés par les services externes intégrés au site (Docorga et Doctolib pour les rendez-vous).</p>
       </div>
 
       <div style="display: flex; gap: var(--space-md); margin-top: var(--space-xl);">

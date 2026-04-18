@@ -58,10 +58,10 @@
         document.documentElement.dataset.analyticsConsent = 'denied';
       }
 
-      // Third-party: Cal.com widget, etc.
+      // Third-party: Docorga, Doctolib, etc.
       if (preferences.thirdParty) {
         document.documentElement.dataset.thirdPartyConsent = 'granted';
-        // Could load Cal.com embed here
+        // Third-party services enabled
       } else {
         document.documentElement.dataset.thirdPartyConsent = 'denied';
       }

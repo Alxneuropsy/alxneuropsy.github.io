@@ -55,6 +55,15 @@
     handleSubmit(e) {
       e.preventDefault();
 
+      // Honeypot anti-spam check: if this hidden field is filled, it's a bot
+      const honeypot = this.form.querySelector('#contact-website');
+      if (honeypot && honeypot.value) {
+        // Silently block — show fake success to fool the bot
+        this.showFeedback('Votre message a bien été envoyé. Merci !', 'success');
+        this.form.reset();
+        return;
+      }
+
       // Gather form data directly (sanitization happens natively via encodeURIComponent during URI building)
       const name = this.form.querySelector('#contact-name').value.trim();
       const email = this.form.querySelector('#contact-email').value.trim();
@@ -99,9 +108,10 @@
         return;
       }
 
-      // Construct mailto link
+      // Construct mailto link (email assembled dynamically for anti-spam)
       const mailBody = `Nom : ${name}\nEmail : ${email}\nTéléphone : ${phone ? phone : 'Non renseigné'}\n\nMessage :\n${message}`;
-      const mailtoLink = `mailto:pacas.neuropsy@gmail.com?subject=${encodeURIComponent('[Site Web] ' + subject)}&body=${encodeURIComponent(mailBody)}`;
+      const recipient = ['pacas.neuropsy', 'gmail.com'].join('@');
+      const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent('[Site Web] ' + subject)}&body=${encodeURIComponent(mailBody)}`;
       
       // Open default mail client
       window.location.href = mailtoLink;
