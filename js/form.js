@@ -7,6 +7,7 @@
   const ContactForm = {
     form: null,
     feedbackEl: null,
+    lastSubmitTime: 0,
 
     init() {
       this.form = document.getElementById('contact-form');
@@ -54,6 +55,13 @@
      */
     handleSubmit(e) {
       e.preventDefault();
+
+      // Throttle: prevent multiple submissions within 30 seconds
+      const now = Date.now();
+      if (now - this.lastSubmitTime < 30000) {
+        this.showFeedback('Veuillez patienter quelques secondes avant de renvoyer un message.', 'error');
+        return;
+      }
 
       // Honeypot anti-spam check: if this hidden field is filled, it's a bot
       const honeypot = this.form.querySelector('#contact-website');
@@ -115,6 +123,8 @@
       
       // Open default mail client
       window.location.href = mailtoLink;
+
+      this.lastSubmitTime = now;
 
       this.showFeedback(
         'Votre messagerie s\'ouvre pour envoyer l\'email. N\'oubliez pas de l\'envoyer !',

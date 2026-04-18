@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page introuvable — Alexia Pacas, Neuropsychologue à Bondoufle.">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+  <title>Page Introuvable — Alexia Pacas Neuropsychologue</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <style>
+    .error-page {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--space-2xl) var(--space-md);
+    }
+    .error-code {
+      font-size: 8rem;
+      font-family: var(--font-secondary);
+      color: var(--color-gold);
+      line-height: 1;
+      margin-bottom: var(--space-sm);
+    }
+    .error-title {
+      font-size: 2.5rem;
+      color: var(--color-text);
+      margin-bottom: var(--space-md);
+    }
+    .error-desc {
+      color: var(--color-text-muted);
+      max-width: 500px;
+      margin: 0 auto var(--space-xl);
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <svg class="navbar__logo-icon" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M20 8c-4 0-8 3-8 8 0 3 1.5 5 3 6.5s3 3.5 3 6.5h4c0-3 1.5-5 3-6.5s3-3.5 3-6.5c0-5-4-8-8-8z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M15 29h10M16 32h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <span>Alexia Pacas</span>
+      </a>
+      <ul class="navbar__menu">
+        <li><a href="index.html" class="navbar__link">Retour à l'accueil</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="error-page">
+    <div class="error-code">404</div>
+    <h1 class="error-title">Page introuvable</h1>
+    <p class="error-desc">
+      Oups ! Il semblerait que vous soyez égaré(e). La page que vous recherchez n'existe pas ou a été déplacée.
+    </p>
+    <a href="index.html" class="btn btn--gold btn--lg">Retourner à l'accueil</a>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <p>&copy; 2025 Alexia Pacas - Neuropsychologue. Tous droits réservés.</p>
+        <div class="footer__legal-links">
+          <a href="mentions-legales.html">Mentions légales</a>
+          <a href="politique-confidentialite.html">Politique de confidentialité</a>
+          <a href="cgu.html">CGU</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
