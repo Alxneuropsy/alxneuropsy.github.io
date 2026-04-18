@@ -175,3 +175,9 @@
   width: 20px;
   height: 20px;
 }
+
+@media (max-width: 768px) {
+  .back-to-top {
+    display: none !important;
+  }
+}
