@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /assets/
-
-Sitemap: https://alxneuropsy.github.io/Pacas.neuropsy/sitemap.xml
